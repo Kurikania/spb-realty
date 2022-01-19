@@ -1,0 +1,118 @@
+@import 'variables';
+body {
+  font-family: "PT Sans";
+  background-color: $gray-light3;
+}
+
+
+.flex {
+  display: flex;
+  &-column {
+    flex-direction: column;
+  }
+  &-align-center {
+    align-items: center;
+  }
+}
+
+.btn {
+  padding: 9px 13px;
+  border: none;
+  .stroke {
+    stroke: black;
+  }
+  &:hover{
+    cursor: pointer;
+    color: red;
+    fill: red;
+    .stroke {
+      stroke: red !important;
+    }
+  }
+}
+
+input{
+  border: none;
+  border-radius: 0;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+  position: relative;
+}
+
+input[type="checkbox"]+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  &:hover {
+    cursor: pointer;
+    color: red
+  }
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  visibility: initial;
+  border: 1px solid #adb5bd;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+input[type="checkbox"]:not(:disabled):not(:checked):hover::before {
+  border-color: #b3d7ff;
+}
+
+input[type="checkbox"]:not(:disabled):active::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+input[type="checkbox"]:focus::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+input[type="checkbox"]:focus:not(:checked)::before {
+  border-color: #80bdff;
+}
+
+
+input[type="checkbox"]:checked::before {
+  background-color: #FCE66F;;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 9'%3e%3cpath fill='none' stroke='black' d='M1 4.5L5.28571 8L11 1'/%3e%3c/svg%3e");
+}
+
+.btn-transparent {
+  border: 1px solid #C4C4C4;
+  background: transparent;
+}
+
+.mr-6 {
+  margin-right: 6px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.svg-up {
+  transform: rotate(0deg);
+}
+
+.svg-down {
+  transform: rotate(180deg);
+}
