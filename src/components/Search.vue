@@ -12,13 +12,13 @@
 
       <div v-if="checkboxes" class="checkboxes" @mouseleave="checkboxes=false">
         <div>
-          <input type="checkbox" class="mr-6" id="reserved" v-model="filters.reserved"> <label for="reserved">Забронировано</label>
+          <input type="checkbox" class="mr-16" id="reserved" v-model="filters.reserved"> <label for="reserved">Забронировано</label>
         </div>
         <div>
-          <input type="checkbox" class="mr-6" id="sold" v-model="filters.sold"> <label for="sold">Продано</label>
+          <input type="checkbox" class="mr-16" id="sold" v-model="filters.sold"> <label for="sold">Продано</label>
         </div>
         <div>
-          <input type="checkbox" class="mr-6" id="active" v-model="filters.active"> <label for="active">Активно</label>
+          <input type="checkbox" class="mr-16" id="active" v-model="filters.active"> <label for="active">Активно</label>
         </div>
       </div>
 
@@ -72,11 +72,11 @@ export default {
     right: 0;
     top: 42px;
     bottom: 0;
-    padding: 5px;
     background-color: white;
     width: 190px;
     height: fit-content;
     z-index: 1;
+    padding: 20px;
 
     div {
       margin-bottom: 14px;

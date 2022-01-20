@@ -36,7 +36,7 @@
       </div>
 
       <div class="flex">
-        <svgicon class="mr-6 mt-5 icon" name="bubble" height="13" minWidth="13" :fill="true"/>
+        <svgicon class="mr-6 mt-5 icon" name="bubble" height="13" minWidth="13" color="#9B9B9B" :fill="true"/>
         <div class="">
           {{ card.address }}
         </div>
@@ -87,7 +87,7 @@ export default {
   border: 1px solid $gray-light;
   position: relative;
 
-  
+
   .btn-round {
     position: relative;
     cursor: pointer;
@@ -109,7 +109,7 @@ export default {
     &::after {
       content: " ";
       position: absolute;
-      bottom: 100%;  /* At the top of the tooltip */
+      bottom: 100%;
       left: 10%;
       margin-left: -5px;
       border-width: 5px;
@@ -149,8 +149,8 @@ export default {
 
       &-red {
         background-color: $red-light;
-        fill: $red;
-        color: $red;
+        fill: $dark-red;
+        color: $dark-red;
       }
 
       &-blue {

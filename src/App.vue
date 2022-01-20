@@ -80,7 +80,7 @@ export default {
           selected: false,
           reserved: true,
           price: 800300,
-          address: 'Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1',
+          address: 'Ленинградская область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1',
           square: 15 ,
           number: "№ 7-10-2 (ПИБ №68)",
           image: require('@/assets/image.png'),
